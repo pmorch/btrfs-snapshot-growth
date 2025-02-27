@@ -57,4 +57,4 @@ def snapshot_diff_size(parent, child):
 def snapshot_diff(parent, child):
     creation_unixtime = int(snapshot_creation_datetime(child).timestamp())
     size = snapshot_diff_size(parent, child)
-    return {"child": str(child), "size": size, "creation": creation_unixtime}
+    return {"snapshot": str(child), "size": size, "creation": creation_unixtime}
