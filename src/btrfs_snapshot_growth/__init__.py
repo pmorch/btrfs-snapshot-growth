@@ -38,10 +38,10 @@ def main():
     if args.json:
         print(json.dumps(diffs, indent=2))
     elif args.csv:
-        writer = csv.writer(sys.stdout, delimiter=';',
-                            quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        writer = csv.writer(
+            sys.stdout, delimiter=";", quotechar="|", quoting=csv.QUOTE_MINIMAL
+        )
         for diff in diffs:
-            writer.writerow([diff['creation'], diff['size']])
+            writer.writerow([diff["creation"], diff["size"]])
     else:
-        parser.error('Need --json/-j or --csv/-c')
-        # raise ValueError()
+        parser.error("Need --json/-j or --csv/-c")
