@@ -9,7 +9,6 @@ from rich.console import Console
 from rich.progress import Progress
 
 import btrfs_snapshot_growth.btrfs_snapshots as snaps
-from btrfs_snapshot_growth.human_bytes import HumanBytes
 
 creation_time_format = "%Y-%m-%d %H:%M:%S %z"
 
