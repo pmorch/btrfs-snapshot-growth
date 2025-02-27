@@ -1,5 +1,5 @@
 [project]
-name = "btrfs-snapshot-size"
+name = "btrfs-snapshot-growth"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -9,4 +9,4 @@ dependencies = [
 ]
 
 [project.gui-scripts]
-btrfs-snapshot-size = "btrfs_snapshot_size:main"
+btrfs-snapshot-growth = "btrfs_snapshot_growth:main"

@@ -5,8 +5,8 @@ from pathlib import Path
 import argparse
 from rich_argparse.contrib import ParagraphRichHelpFormatter
 
-import btrfs_snapshot_size.btrfs_snapshots as snaps
-from btrfs_snapshot_size.human_bytes import HumanBytes
+import btrfs_snapshot_growth.btrfs_snapshots as snaps
+from btrfs_snapshot_growth.human_bytes import HumanBytes
 
 
 def snapshot_diffs(snapshots):
@@ -23,7 +23,7 @@ def snapshot_diffs(snapshots):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="btrfs-snapshot-size",
+        prog="btrfs-snapshot-growth",
         description="calculates the size diffs between snapshots",
         formatter_class=ParagraphRichHelpFormatter,
     )
