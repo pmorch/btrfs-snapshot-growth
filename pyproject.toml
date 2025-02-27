@@ -1,0 +1,12 @@
+[project]
+name = "btrfs-snapshot-size"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rich-argparse>=1.7.0",
+]
+
+[project.gui-scripts]
+btrfs-snapshot-size = "btrfs_snapshot_size:main"
