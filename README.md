@@ -1,6 +1,6 @@
 # BTRFS snapshot growth
 
-It has always bothered by btrfs that I have no good way of seeing btrfs disk
+It has always bothered me with btrfs that I have no good way of seeing btrfs disk
 usage over time.
 
 I know about `btrfs quota` (not good for performance) and `btrfs filesystem du
